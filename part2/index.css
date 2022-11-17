@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'TT Lakes regular';
+    src: url(fonts/TTLakes-Regular.ttf);
+}
+@font-face {
+    font-family: 'TT Lakes medium';
+    src: url(fonts/TTLakes-Medium.ttf);
+}
+@font-face {
+    font-family: 'TT Lakes bold';
+    src: url(fonts/TTLakes-Bold.ttf);
+}
+body {
+    margin:0;
+}
+
+
+/*New*/
+.menu {
+    box-sizing:border-box;
+    width:320px;
+    box-shadow: 1px 0px 20px 0px #b9b9b9;
+    padding:10px;
+    height:100rem;
+}
+/*Menu-header*/
+.menu__header {
+    display:flex;
+    align-items:center;
+}
+.menu__icon {
+    margin:10px;
+    cursor:pointer;
+    width:40px;
+    height: 40px;
+    border-radius:50%;
+    background-color: #FF3E79;
+    border:none;
+    background-repeat:no-repeat;
+    background-position: 50%;
+    transition: opacity 0.3s linear;
+}
+.menu__icon:hover {
+    opacity:0.7;
+}
+.menu__logo {
+    margin-right:70px;
+    margin-left:5px;
+}
+.menu__icon--burger {
+    background-image: url(img/burgerx.png);
+}
+.menu__icon--search {
+    background-image: url(img/search.png);
+}
+/*List*/
+.menu-nav__list {
+    list-style:none;
+    padding:10px 0 0 20px;
+}
+.menu__link {
+    display:block;
+    font-family:'TT Lakes regular', sans-serif;
+    font-size:16px;
+    margin:15px 0;
+    color:#1B1C21;
+    cursor:pointer;
+    transition: color 0.2s linear;
+}
+.menu__link--clicked {
+    color:#7E7E82;
+    position:relative;
+}
+.menu__link--clicked::before {
+    content:'';
+    width:4px;
+    height:32px;
+    background-color:#41F6D7;
+    position:absolute;
+    top: -7px;
+    left: -28px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.menu__item:hover {
+    color:#7E7E82;
+}
+/*Footer*/
+.menu__footer {
+    display:flex;
+    flex-direction: column;
+}
+.menu__last-icons {
+    display:flex;
+    list-style:none;
+    padding:0;
+}
+.languages {
+    display:flex;
+    list-style:none;
+    padding:0;
+}
+
+.menu__icon--call {
+    background-image: url(img/call.png);
+}
+.menu__icon--chat {
+    background-image: url(img/chat.png);
+}
+.menu__icon--profile {
+    background-image: url(img/profile.png);
+}
+.menu__number {
+    font-family:'TT Lakes bold', sans-serif;
+    font-size:24px;
+    color:#1B1C21;
+    margin-left:10px;
+    text-decoration:none;
+}
+.menu__email {
+    font-family:'TT Lakes medium', sans-serif;
+    font-size:16px;
+    color:#1B1C21;
+    margin-bottom:10px;
+    margin-left:10px;
+    text-decoration:none;
+}
+.languages__lang {
+    font-family:'TT Lakes medium', sans-serif;
+    font-size:16px;
+    color:#1B1C21;
+    margin: 0 5px;
+    cursor:pointer;
+    transition: color 0.2s linear;
+}
+.languages__lang:hover {
+    color:#7E7E82;
+}
+.menu__languages {
+    margin-left:5px;
+    margin-top:30px;
+}
+.languages__lang:first-child {
+    color:#7E7E82;
+}
